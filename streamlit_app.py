@@ -1,2 +1,2 @@
-import stremlit
-steamlit.title ('my parents new healthy diner')
+import streamlit
+streamlit.title ('my parents new healthy diner')
