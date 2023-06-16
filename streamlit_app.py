@@ -23,7 +23,7 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
 def get_fruit_loadlist():
-  with my_cur = my_cnx.cursor()
+  with my_cur = my_cnx.cursor() as my_cur():
   my_cur.execute("SELECT * from fruit_load_list")
   return mychar.fetchall()
 
