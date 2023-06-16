@@ -31,8 +31,9 @@ streamlit.header('Fruityvice Fruit Advice!')
 if streamlit.button ('Get Fruit load list'):
   my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
   my_data_rows = get_fruit_loadlist()
-  streamlit.dataframe(my_data_rows)
-except URLError as e:
+  streamlit.dataframe(my_data_rows) 
+  
+  
   
   streamlit.stop()
 
