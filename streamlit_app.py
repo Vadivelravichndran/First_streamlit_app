@@ -24,7 +24,7 @@ streamlit.dataframe(fruits_to_show)
 
 def get_fruit_loadlist():
   with my_cnx.cursor() as my_cur:
-  my_cur.execute("SELECT * from fruit_load_list")
+    my_cur.execute("SELECT * from fruit_load_list")
   return mychar.fetchall()
 
 streamlit.header('Fruityvice Fruit Advice!')
